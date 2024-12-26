@@ -23,7 +23,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 ### Links
 
 - Solution URL: [Solution](https://github.com/Knight9876/time-tracking-dashboard)
-- Live Site URL: [Live URL](https://recipe-page-using-tailwind.netlify.app)
+- Live Site URL: [Live URL](https://time-tracking-dashboard-tailwind.netlify.app)
 
 ## My process
 
