@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Rubik", serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: yellow
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[hsl(226,43%,10%)] flex items-center justify-center max-h sm:min-h-screen text-white"
+  >
+    <!-- Container -->
+    <div
+      class="flex flex-col sm:flex-row gap-6 items-stretch w-full max-w-5xl px-6 my-20 sm:m-0"
+    >
+      <!-- Profile Card -->
+      <div
+        class="bg-[hsl(235,46%,20%)] rounded-[1rem] flex flex-col justify-between w-full sm:max-w-[15rem]"
+      >
+        <!-- Inner Card -->
+        <div
+          class="flex sm:flex-col items-center sm:items-start justify-between gap-4 sm:gap-0 sm:justify-normal bg-[hsl(246,80%,60%)] rounded-[1rem] p-8 sm:p-4 md:p-8 sm:h-80"
+        >
+          <img
+            src="./images/image-jeremy.png"
+            alt="Profile"
+            class="w-20 h-20 rounded-full border-2 border-white sm:mb-6"
+          />
+          <div class="flex flex-col">
+            <p class="text-[hsl(236,100%,87%)] text-sm sm:mt-4">Report for</p>
+            <h1 class="text-3xl sm:text-4xl font-thin leading-tight">
+              Jeremy Robson
+            </h1>
+          </div>
+        </div>
+
+        <!-- Outer Card Content -->
+        <div
+          class="p-8 sm:space-y-3 flex sm:flex-col sm:items-start items-center justify-between"
+        >
+          <button
+            class="text-[hsl(235,45%,61%)] hover:text-white timeframe-btn"
+            data-timeframe="daily"
+          >
+            Daily
+          </button>
+          <button
+            class="text-white hover:text-white timeframe-btn"
+            data-timeframe="weekly"
+          >
+            Weekly
+          </button>
+          <button
+            class="text-[hsl(235,45%,61%)] hover:text-white timeframe-btn"
+            data-timeframe="monthly"
+          >
+            Monthly
+          </button>
+        </div>
+      </div>
+
+      <!-- Activity Cards -->
+      <div
+        id="cards-container"
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 h-[100rem] sm:h-auto sm:flex-1"
+      ></div>
+    </div>
+    
+    <!-- Attribution -->
+    <div class="hidden sm:block attribution absolute bottom-4 w-full text-center">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://yashkamble.netlify.app" target="_blank">Yash Kamble</a
+        >.
+      </p>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
